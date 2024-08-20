@@ -1,1 +1,1 @@
-To chech it you should uncomment task by task
+To check it you should uncomment task by task
