@@ -1,1 +1,1 @@
-To check it you should unpack, adjust and start apache24
+To check it you should open hw_10_10_2024 and follow instruction inside
