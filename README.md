@@ -1,1 +1,1 @@
-To check it you should open hw_10_10_2024 and follow instruction inside
+To check it you should start apache24 and open pdd.py in browser
