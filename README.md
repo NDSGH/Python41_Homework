@@ -1,1 +1,1 @@
-To check it you should start apache24 and open pdd.py in browser
+To check it you should open and run files
