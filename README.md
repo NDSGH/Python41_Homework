@@ -1,1 +1,1 @@
-To check it you should open and run files
+To check it you should open and run replacer_marks.py file
