@@ -1,1 +1,1 @@
-To check it you should open and run replacer_marks.py file
+To check it you should open and run test.py file in cmd with numbers arguments (example: python test.py 1 2 3 4 5)
