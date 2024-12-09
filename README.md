@@ -1,1 +1,1 @@
-To check it you should open and run test.py file in cmd with numbers arguments (example: python test.py 1 2 3 4 5)
+To check it you should open and run pyton files
