@@ -7,27 +7,27 @@ num_list = [1, 2, 3, 4, 5]  # исходный список
 
 
 class Reduce:
-    def __init__(self, some_list, start=0):
+    def __init__(self, some_list, op='+', start=0):
         self.some_list = some_list
         self.start = start
+        self.op = op
 
-    def add(self, acc, par):
-        return acc + par
-
+    def func(self, acc, val):
+        """Функция для работы основного метода reduce"""
+        return eval(f'{acc}{self.op}{val}')
     def reduce_custom(self):
-        """Основной метод"""
+        """Основной метод reduce"""
         res = self.start
         for val in self.some_list:
-            res = self.add(res, val)
+            res = self.func(res, val)
         return res
-
     def reduce_built(self):
-        """Проверочный метод"""
-        res = reduce(lambda acc, val: acc + val, self.some_list, self.start)
+        """Проверочный метод reduce"""
+        res = reduce(lambda acc, val: eval(f'{acc}{self.op}{val}'), self.some_list, self.start)
         return res
 
 
-reduce_1 = Reduce(num_list, 5)  # создадим объект класса Reduce(список, начальное значение)
+reduceObj = Reduce(num_list, '+', 5)  # объект класса Reduce(список, операция, нач. значение)
 
-print('Результат основного метода: {}'.format(reduce_1.reduce_custom()))
-print('Результат проверочного метода: {}'.format(reduce_1.reduce_built()))
+print('Результат основного метода: {}'.format(reduceObj.reduce_custom()))
+print('Результат проверочного метода: {}'.format(reduceObj.reduce_built()))
