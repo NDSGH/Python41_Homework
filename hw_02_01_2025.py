@@ -15,12 +15,14 @@ class Reduce:
     def func(self, acc, val):
         """Функция для работы основного метода reduce"""
         return eval(f'{acc}{self.op}{val}')
+    
     def reduce_custom(self):
         """Основной метод reduce"""
         res = self.start
         for val in self.some_list:
             res = self.func(res, val)
         return res
+    
     def reduce_built(self):
         """Проверочный метод reduce"""
         res = reduce(lambda acc, val: eval(f'{acc}{self.op}{val}'), self.some_list, self.start)
