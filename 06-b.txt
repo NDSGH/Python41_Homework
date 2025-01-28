@@ -1,0 +1,23 @@
+Класс как объект.
+Напишите класс IteratorClass который выдает значения от 0 до N-1 при каждом вызове метода next() от экземпляра класса. Значение N передавайте при инициализации класса через __init__(...). После того как итерация до N-1 завершилась -- возвращайте None при каждом вызове next().
+
+Пример работы:
+
+iter1 = IteratorClass(4)
+iter1.next() # => 0
+iter1.next() # => 1
+iter1.next() # => 2
+iter1.next() # => 3
+iter1.next() # => None
+
+
+iii = IteratorClass(3)
+mmm = IteratorClass(3)
+iii.next() # => 0
+mmm.next() # => 0
+iii.next() # => 1
+iii.next() # => 2
+mmm.next() # => 1
+mmm.next() # => 2
+mmm.next() # => None
+iii.next() # => None
