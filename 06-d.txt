@@ -1,0 +1,19 @@
+1. Прочитать про предпосылки введения декораторов в Python
+https://peps.python.org/pep-0318/
+
+2. Прочитать про декоратор @staticmethod
+https://docs.python.org/3/library/functions.html#staticmethod
+
+3. Напишите (как вы поняли) возможную причину добавления декоратора @staticmethod в язык Python
+
+4. Напишите простой и минималистичный пример демонстрирующий пользу декоратора @staticmethod
+
+5. Вспомните про класс socket из библиотеки socket
+https://medium.com/@stephen.biston/write-an-http-server-from-the-ground-up-in-9-minutes-with-python-1fdb9800a26a
+
+6. Ознакомьтесь с классом HTTPServer из модуля http.server
+https://realpython.com/python-http-server/
+https://docs.python.org/3/library/http.server.html
+
+7. Полистайте документацию веб-фреймворка Flask
+https://flask.palletsprojects.com/en/stable/quickstart/
