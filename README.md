@@ -1,1 +1,1 @@
-Open files and run code in python files task by task
+Open python files and run code task by task
