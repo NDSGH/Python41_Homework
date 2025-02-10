@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block main %}
+    {% if qs %}
+        <h1>Your query string:</h1>
+        {% for k, v in qs.items() %}
+        <h2 style="color: green";>key: {{ k }}, value: {{ v }}</h2>
+        {% endfor %}
+    {% else %}
+        <h1 style="color: red";>Empty! Please, write query string!</h1>
+    {% endif %}
+{% endblock main %}
