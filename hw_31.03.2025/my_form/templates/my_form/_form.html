@@ -1,0 +1,8 @@
+<form class="form" action="http://127.0.0.1:8000/hello/" method="POST" autocomplete="on">
+    {% csrf_token %}
+    <fieldset class="form-fieldset">
+        <legend class="form-legend">my form</legend>
+        <input class="form-input" type="text" name="name" maxlength="20" placeholder="Enter your name" required>
+        <button class="form-btn" type="submit">Жми сюда!</button>
+    </fieldset>
+</form>

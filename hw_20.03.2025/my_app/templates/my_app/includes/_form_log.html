@@ -1,0 +1,9 @@
+<form class="form" action="http://127.0.0.1:8000/valid/" method="POST" autocomplete="on">
+    {% csrf_token %}
+    <fieldset class="form-fieldset">
+        <legend class="form-legend">login form</legend>
+        <input class="form-login" type="text" name="login_ch" maxlength="20" placeholder="Enter your login" required>
+        <input class="form-passwd" type="password" name="passwd_ch" maxlength="50" placeholder="Enter your password" required>
+        <button class="form-btn" type="submit">Отправить</button>
+    </fieldset>
+</form>

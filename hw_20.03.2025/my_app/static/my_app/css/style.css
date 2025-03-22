@@ -1,0 +1,48 @@
+body {
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.form-login,
+.form-passwd {
+    height: 25px;
+    margin: 20px 0 20px 0;
+    display: block;
+    justify-self: center;
+
+    border-radius: 5px;
+}
+
+.form-btn {
+    height: 25px;
+    margin: 15px 0 15px 0;
+    display: block;
+    justify-self: center;
+
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-btn:hover {
+    cursor: pointer;
+}
+
+.form {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-fieldset {
+    background-color: rgb(250, 252, 161);
+    border-radius: 10px;
+}
+
+.form-legend {
+    text-align: center;
+}

@@ -1,9 +1,0 @@
-Реализуйте серверную часть на Flask которая:
-- по HTTP запросу c методом GET и URL /static-page вернет валидный html с приветствием
-- по HTTP запросу c методом GET и URL /dynamic-page/NAME вернет валидный html внутри которого будет содержаться часть URL которая обозначена как NAME
-
-перед написанием программы изучить полностью:
-
-MDN: https://developer.mozilla.org/ru/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_URL
-
-FLASK: https://flask.palletsprojects.com/en/stable/quickstart/#variable-rules

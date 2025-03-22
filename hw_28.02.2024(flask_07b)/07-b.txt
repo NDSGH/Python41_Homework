@@ -1,2 +1,0 @@
-Реализуйте серверную часть на Flask которая:
-- по HTTP запросу c методом GET и URL /query-string?field1=VALUE1&field2=VALUE2 вернет валидный html со значениями полей field1 и field2
