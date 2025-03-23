@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table class="table-faculty">
+        <caption class="faculty-caption">
+            Таблица "Факультеты"
+        </caption>
+        <thead>
+            <tr>
+                <th>Факультет</th>
+                <th>Дата создания</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for faculty in db_faculty %}
+            <tr>
+                <td>{{ faculty.title }}</td>
+                <td>{{ faculty.created }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <table class="table-group">
+        <caption class="group-caption">
+            Таблица "Группы"
+        </caption>
+        <thead>
+            <tr>
+                <th>Группа</th>
+                <th>Факультет</th>
+                <th>Дата создания</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for group in db_group %}
+            <tr>
+                <td>{{ group.title }}</td>
+                <td>{{ group.faculty }}</td>
+                <td>{{ group.created }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <table class="table-student">
+        <caption class="student-caption">
+            Таблица "Студенты"
+        </caption>
+        <thead>
+            <tr>
+                <th>ФИО</th>
+                <th>Факультет</th>
+                <th>Дата создания</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for student in db_student %}
+            <tr>
+                <td>{{ student.name }}</td>
+                <td>{{ student.group }}</td>
+                <td>{{ student.created }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock content %}
