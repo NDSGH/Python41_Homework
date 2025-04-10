@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Start Python files hw_30.04.2025_13a and hw_30.04.2025_13b and get the result
 =======
 1. hw_20.03.2025 (django)
@@ -24,3 +25,6 @@ Start Python files hw_30.04.2025_13a and hw_30.04.2025_13b and get the result
 - открываем главную страницу ('') для просмотра таблиц;
 - скриншоты находятся в одноимённом файле.
 >>>>>>> 4910316bac61f04b33b481df828443047bcbf2f3
+=======
+
+>>>>>>> fd6eedf9dfa30cb334e2e36a50a1e7525c7583a7
