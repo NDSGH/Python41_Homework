@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="main-tbp">
+        <p class="price-text">
+            При заключении договора на срок от 1 года, <strong>бесплатно</strong> оборудуем
+            объект системой диспетчеризации, подготовим к ОЗП и сдадим в РСО.
+        </p>
+    </div>
+
+    <div class="main-tbp">
+        <p class="price-text">
+            Стоимость основных видов услуг приведена ниже. Для уточнения сроков выполнения и стоимости
+            иных работ, свяжитесь с нами.
+        </p>
+    </div>
+
+    <div class="main-price">
+        {% for row in db_price %}
+            <div class="price price-service">{{ row.service }}</div>
+            <div class="price price-cost">от {{ row.cost }} т.р./месяц</div>
+        {% endfor %}
+    </div>
+
+    <div class="main-tbp">
+        <p class="price-text">
+            Заявки принимаем: без выходных с 10:00 до 19:00.
+        </p>
+    </div>
+
+    <div class="main-tbp">
+        <p class="price-text">
+            Перед выполнением любых работ, после согласования их объёма, заключается типовой договор.<br>
+            Все сотрудники компании обучены безопасным методам и приемам выполнения работ и имеют
+            соответствующие удостоверения.
+        </p>
+    </div>
+{% endblock main %}

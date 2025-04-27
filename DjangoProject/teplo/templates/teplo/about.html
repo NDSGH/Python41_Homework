@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main %}
+    <div class="main-tba">
+        <p class="about-text">
+            Наша команда состоит из группы индивидуальных предпринимателей с большим опытом практической деятельности
+            в области теплоснабжения и тепловой автоматики. Мы решим задачи любой сложности.
+        </p>
+    </div>
+
+    <div class="main-tba">
+        <p class="about-text">
+            Несколько наших объектов для примера
+        </p>
+    </div>
+
+    <div class="main-slider">
+        {% include 'teplo/includes/slides_1.html' %}
+        {% include 'teplo/includes/slides_2.html' %}
+        {% include 'teplo/includes/slides_3.html' %}
+    </div>
+{% endblock main %}
+
+{% block script %}
+    <script src="{% static 'teplo/js/script_about.js' %}" defer></script>
+{% endblock script %}

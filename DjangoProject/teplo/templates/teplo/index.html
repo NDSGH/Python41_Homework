@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block main %}
+    <div class="main-tbh">
+        <p class="home-text">
+            Выполняем работы любой сложности в сфере разработки и обслуживания инженерных систем.<br>
+            Предоставляем качественные услуги по подготовке ИТП, АУУ к отопительному периоду.
+        </p>
+    </div>
+
+    <div class="time-to-hp">
+        <span>До следующего ОЗП примерно осталось:</span>
+        <span id="d"></span>
+        <span id="h"></span>
+        <span id="m"></span>
+        <span id="s"></span>
+    </div>
+
+    <form class="form" action="" method="POST" name="form-fb">
+        <p class="form-title">НАПИШИТЕ НАМ</p>
+            {% csrf_token %}
+            {{ form.as_p }}
+        <div class="form-error">{{ form.non_field_errors }}</div>
+        <p><button class="form-btn" type="submit">Отправить</button></p>
+    </form>
+
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'success' %}
+                <div class="form-success">{{ message|safe }}</div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endblock main %}
+
+{% block script %}
+    <script src="{% static 'teplo/js/script_index.js' %}" defer></script>
+{% endblock script %}

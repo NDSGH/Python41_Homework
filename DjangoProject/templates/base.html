@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Энергосервисная Компания Тепло. Обслуживание ИТП, АУУ, КНС, НС, УУТЭ по г. Москве."/>
+    <link rel="shortcut icon" href="{% static 'teplo/img/favicon.png' %}" type="image/x-icon"/>
+    <link type="text/css" href="{% static 'teplo/css/style.css' %}" rel="stylesheet" />
+    <title>{{ title|capfirst }}</title>
+</head>
+<body class="container">
+    <header class="header">
+        <nav class="nav">
+            {% with request.resolver_match.url_name as url_name %}
+            <div class="nav-logo"></div>
+            <div class="nav-menu">
+                <div class="nav-item">
+                    <a class="page {% if url_name == 'home' %} active {% endif %}" href="{% url 'teplo:home' %}">
+                        ГЛАВНАЯ
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="page {% if url_name == 'about' %} active {% endif %}" href="{% url 'teplo:about' %}">
+                        О НАС
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="page {% if url_name == 'service' %} active {% endif %}" href="{% url 'teplo:service' %}">
+                        УСЛУГИ
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a class="page {% if url_name == 'price' %} active {% endif %}" href="{% url 'teplo:price' %}">
+                        ЦЕНЫ
+                    </a>
+                </div>
+            </div>
+            {% endwith %}
+        </nav>
+    </header>
+
+    <main class="main">
+        {% block main %}
+        {% endblock main %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-mail"><a class="mail" href="mailto:info@esk-teplo.ru" target="_blank">
+                <img src="{% static 'teplo/img/mail.svg' %}" alt="mail">&nbsp;info@esk-teplo.ru</a>
+            </div>
+
+            <div class="footer-tel"><a class="tel" href="tel:+79654128898" target="_blank">
+                <img src="{% static 'teplo/img/phone.svg' %}" alt="tel">&nbsp;+7 (965) 412-88-98</a>
+            </div>
+
+            <div class="footer-wapp"><a class="wapp" href="https://wa.me/+79654128898" target="_blank" rel="noreferrer">
+                <img src="{% static 'teplo/img/whatsapp.svg' %}" alt="wapp" height="15">&nbsp;WhatsApp</a>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2024, ESK-Teplo</p>
+    </footer>
+
+    {% block script %} {% endblock script %}
+</body>
+</html>
