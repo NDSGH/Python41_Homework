@@ -1,0 +1,35 @@
+{% load static %}
+
+<div class="slider">
+    <div class="btn-box">
+        <button class="prev" onclick="onPrev1()">&#171;</button>
+        <p>Модернизация котельной</p>
+        <button class="next" onclick="onNext1()">&#187;</button>
+    </div>
+
+    <div class="slide-box">
+        <div class="slide slide-1" data-active1>
+            <img class="slide-img" src="{% static 'teplo/img/boiler_1/img_1.webp' %}" alt="boiler room">
+        </div>
+
+        <div class="slide slide-1">
+            <img class="slide-img" src="{% static 'teplo/img/boiler_1/img_2.webp' %}" alt="boiler room">
+        </div>
+
+        <div class="slide slide-1">
+            <img class="slide-img" src="{% static 'teplo/img/boiler_1/img_3.webp' %}" alt="boiler room">
+        </div>
+
+        <div class="slide slide-1">
+            <img class="slide-img" src="{% static 'teplo/img/boiler_1/img_4.webp' %}" alt="boiler room">
+        </div>
+
+        <div class="slide slide-1">
+            <img class="slide-img" src="{% static 'teplo/img/boiler_1/img_5.webp' %}" alt="boiler room">
+        </div>
+
+        <div class="slide slide-1">
+            <img class="slide-img" src="{% static 'teplo/img/boiler_1/img_6.webp' %}" alt="boiler room">
+        </div>
+    </div>
+</div>
